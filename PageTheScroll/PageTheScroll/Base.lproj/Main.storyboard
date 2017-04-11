@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PageTheScroll" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Sky" translatesAutoresizingMaskIntoConstraints="NO" id="075-hq-hVM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="wiB-Wn-snp">
+                                <rect key="frame" x="456" y="20" width="134" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="FmA-nb-Dao"/>
+                                    <constraint firstAttribute="width" constant="134" id="LAG-xP-0Uo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="li4-mh-aPI">
+                                <rect key="frame" x="0.0" y="410" width="600" height="190"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVY-DF-c4a">
+                                <rect key="frame" x="175" y="0.0" width="250" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="7el-8G-1FY"/>
+                                    <constraint firstAttribute="width" constant="600" id="Cef-CR-AX6"/>
+                                    <constraint firstAttribute="width" constant="250" id="IJW-eE-vTT"/>
+                                    <constraint firstAttribute="width" constant="600" id="OVQ-F4-O1g"/>
+                                    <constraint firstAttribute="width" constant="600" id="btD-Eh-brh"/>
+                                    <constraint firstAttribute="height" constant="600" id="qg9-nl-Mp8"/>
+                                    <constraint firstAttribute="height" constant="600" id="sDp-WV-LT9"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7el-8G-1FY"/>
+                                        <exclude reference="Cef-CR-AX6"/>
+                                        <exclude reference="OVQ-F4-O1g"/>
+                                        <exclude reference="btD-Eh-brh"/>
+                                        <exclude reference="qg9-nl-Mp8"/>
+                                        <exclude reference="sDp-WV-LT9"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LVY-DF-c4a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="07Z-In-5wd"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="LVY-DF-c4a" secondAttribute="trailing" id="0ug-RY-zBP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wiB-Wn-snp" secondAttribute="trailing" constant="-10" id="84Z-XE-Srh"/>
+                            <constraint firstItem="LVY-DF-c4a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="C8S-y9-oy9"/>
+                            <constraint firstItem="LVY-DF-c4a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FoE-GG-cZJ"/>
+                            <constraint firstItem="LVY-DF-c4a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="I6W-Ms-gVR"/>
+                            <constraint firstItem="075-hq-hVM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="MWP-pq-ABy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LVY-DF-c4a" secondAttribute="bottom" id="N7P-Yb-BuG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="075-hq-hVM" secondAttribute="bottom" id="OKQ-Gy-vPn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LVY-DF-c4a" secondAttribute="bottom" id="RBo-ug-X5b"/>
+                            <constraint firstItem="075-hq-hVM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UAy-Ww-nBm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LVY-DF-c4a" secondAttribute="trailing" constant="-20" id="VBP-A6-k6m"/>
+                            <constraint firstItem="wiB-Wn-snp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ZAx-0S-hhd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LVY-DF-c4a" secondAttribute="bottom" id="ZuW-DJ-Bbb"/>
+                            <constraint firstItem="075-hq-hVM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="cU3-Ze-7jc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="075-hq-hVM" secondAttribute="trailing" id="q3R-Fi-ARf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LVY-DF-c4a" secondAttribute="bottom" id="qvJ-cK-LhI"/>
+                            <constraint firstItem="LVY-DF-c4a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="r25-d7-OlW"/>
+                            <constraint firstItem="LVY-DF-c4a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="s0b-mY-VY2"/>
+                            <constraint firstItem="LVY-DF-c4a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="u30-an-wCj"/>
+                            <constraint firstItem="075-hq-hVM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wBO-Ts-R0P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="075-hq-hVM" secondAttribute="trailing" id="zPt-YT-zZ4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0ug-RY-zBP"/>
+                                <exclude reference="C8S-y9-oy9"/>
+                                <exclude reference="I6W-Ms-gVR"/>
+                                <exclude reference="VBP-A6-k6m"/>
+                                <exclude reference="r25-d7-OlW"/>
+                                <exclude reference="s0b-mY-VY2"/>
+                                <exclude reference="u30-an-wCj"/>
+                                <exclude reference="N7P-Yb-BuG"/>
+                                <exclude reference="RBo-ug-X5b"/>
+                                <exclude reference="qvJ-cK-LhI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="scrollview" destination="LVY-DF-c4a" id="fde-S0-O0W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="400"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mountains" width="375" height="100"/>
+        <image name="Sky" width="750" height="1334"/>
+        <image name="Sun" width="53" height="53"/>
+    </resources>
+</document>
