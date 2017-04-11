@@ -22,12 +22,14 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        print("blah blah")
     }
     
     override func viewDidAppear(animated: Bool) {
         var contentWidth: CGFloat = 0.0
         let scrollWidth = scrollview.frame.size.width
-        
+        //comm
         for x in 0...2 {
             let image = UIImage(named: "icon\(x).png")
             let imageView = UIImageView(image: image)
@@ -42,7 +44,7 @@ class ViewController: UIViewController {
             
             scrollview.addSubview(imageView)
             
-            
+            //statuss
             imageView.frame = CGRect(x: newX-75, y: (scrollview.frame.size.height / 2)-75, width: 150, height: 150)
         
                 
